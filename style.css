@@ -60,13 +60,13 @@ select .dropdown-option {
   background-color: #4a4e69;
 }
 
-.container-fluid .d-lg-block h2 {
+.cat-text h1 {
   color: #f2e9e4;
   font-weight: 100;
   font-size: 4.5rem;
 }
 
-.container-fluid .d-lg-block h2 span {
+.cat-text h1 span {
   color: #c9ada7;
 }
 
@@ -93,8 +93,26 @@ select .dropdown-option {
   transition: background 1s;
 }
 
+/* dark theme */
+.cat-text.dark-theme h1 {
+  color: #c9ada7;
+}
+
+.cat-text.dark-theme h1 span {
+  color: #9a8c98;
+}
+
+.cat-text.dark-theme h2 {
+  color: #9a8c98;
+}
+
+.cat-text.dark-theme p {
+  color: #c9ada7;
+}
+/* end of dark theme */
+
 @media (max-width: 1415px) {
-  .container-fluid .d-lg-block h2 {
+  .cat-text h1 {
     font-size: 2.5rem;
   }
   .cat-text h2 {
