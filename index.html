@@ -38,7 +38,7 @@
             <a href="#titleText" id="homeLink" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="#aboutTitle" id="aboutLink" class="nav-link">ABOUT</a>
+            <a href="#aboutSection" id="aboutLink" class="nav-link">ABOUT</a>
           </li>
           <li class="align-items-center">
             <select onchange="changeLanguage(this)">
@@ -68,7 +68,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid px-0">
+    <section class="container-fluid px-0" id="aboutSection">
       <div class="row align-items-center no-gutters">
         <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
           <img src="Resources/kin-close.png" class="img-fluid" alt="" />
@@ -136,13 +136,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="util.js"></script>
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
   </body>
 </html>

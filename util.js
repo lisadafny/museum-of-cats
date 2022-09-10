@@ -1,3 +1,16 @@
+const navbar = document.getElementById("mainNavbar");
+document.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > navbar.clientHeight) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+$(document).ready(function () {
+  $(this).scrollTop(0);
+});
+
 function changeLanguage(sel) {
   if (sel.value == 2) {
     document.getElementById("menuName").html = "GATO";
