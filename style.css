@@ -20,7 +20,7 @@ body {
   display: none;
   justify-content: end;
   font-size: 3rem;
-  color: #c9ada7;
+  color: #c9ada720;
 }
 
 .navbar {
@@ -85,7 +85,7 @@ select .dropdown-option {
   animation: 1s ease-out 0s 1 slideNavFromLeft;
   background: #4a4e69;
   display: flex;
-  transition: background 500ms;
+  transition: background 1ms;
 }
 
 .navbar.scrolledTop {
@@ -105,5 +105,21 @@ select .dropdown-option {
 @media (max-width: 767px) {
   #mainNavbar .nav-link {
     padding-left: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #mainNavbar .nav-link {
+    background-image: linear-gradient(to right, #4a4e69, #4a4e6920);
+  }
+  #mainNavbar select {
+    background-image: linear-gradient(to right, #4a4e69, #4a4e6920);
+    width: 100%;
+  }
+  .navbar.scrolledTop {
+    background-image: linear-gradient(to right, #4a4e69, #4a4e6920);
+  }
+  select .dropdown-option {
+    background-image: linear-gradient(to right, #4a4e69, #4a4e6920);
   }
 }
