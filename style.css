@@ -7,7 +7,23 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-#mainNavbar {
+@keyframes slideNavFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bg-main-navbar {
+  display: none;
+  justify-content: end;
+  font-size: 3rem;
+  color: #c9ada7;
+}
+
+.navbar {
   font-size: 1.5rem;
   font-weight: 100;
 }
@@ -66,8 +82,15 @@ select .dropdown-option {
 }
 
 .navbar.scrolled {
+  animation: 1s ease-out 0s 1 slideNavFromLeft;
   background: #4a4e69;
+  display: flex;
   transition: background 500ms;
+}
+
+.navbar.scrolledTop {
+  background: none;
+  transition: background 1s;
 }
 
 @media (max-width: 1415px) {
