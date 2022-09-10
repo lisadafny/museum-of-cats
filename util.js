@@ -1,9 +1,10 @@
-const navbar = document.getElementById("mainNavbar");
+const navbar = document.getElementById("bgNavbar");
 document.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > navbar.clientHeight) {
     navbar.classList.add("scrolled");
+    navbar.classList.remove("scrolledTop");
   } else {
-    navbar.classList.remove("scrolled");
+    navbar.classList.add("scrolledTop");
   }
 });
 
