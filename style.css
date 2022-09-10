@@ -74,6 +74,9 @@ select .dropdown-option {
   .container-fluid .d-lg-block h2 {
     font-size: 2.5rem;
   }
+  .cat-text h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 767px) {
