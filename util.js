@@ -1,3 +1,8 @@
+$(document).ready(function () {
+  $(this).scrollTop(0);
+  changeLanguage($("selChangeLanguage"));
+});
+
 document.addEventListener("scroll", () => {
   const navbar = document.getElementById("bgNavbar");
   if (document.documentElement.scrollTop > navbar.clientHeight) {
@@ -6,10 +11,6 @@ document.addEventListener("scroll", () => {
   } else {
     navbar.classList.add("scrolledTop");
   }
-});
-
-$(document).ready(function () {
-  $(this).scrollTop(0);
 });
 
 function themeColor(sel) {

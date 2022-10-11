@@ -93,6 +93,9 @@ select .dropdown-option {
   transition: background 1s;
 }
 
+select:focus-visible {
+  outline: none;
+}
 /* dark theme */
 .cat-text.dark-theme h1 {
   color: #c9ada7;
