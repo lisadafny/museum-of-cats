@@ -6,24 +6,24 @@ $(document).ready(function () {
 document.addEventListener("scroll", () => {
   const navbar = document.getElementById("bgNavbar");
   if (document.documentElement.scrollTop > navbar.clientHeight) {
-    navbar.classList.add("scrolled");
-    navbar.classList.remove("scrolledTop");
+    $(navbar).addClass("scrolled");
+    $(navbar).removeClass("scrolledTop");
   } else {
-    navbar.classList.add("scrolledTop");
+    $(navbar).addClass("scrolledTop");
   }
 });
 
 function themeColor(sel) {
   const catText = $(".cat-text");
   if (sel.value == 2) {
-    document.body.style.backgroundColor = "#22223b";
+    $("body").css({ background: "#22223b" });
     for (let elem of catText) {
-      elem.classList.add("dark-theme");
+      $(elem).addClass("dark-theme");
     }
   } else {
-    document.body.style.backgroundColor = "#9a8c98";
+    $("body").css({ background: "#9a8c98" });
     for (let elem of catText) {
-      elem.classList.remove("dark-theme");
+      $(elem).removeClass("dark-theme");
     }
   }
 }
