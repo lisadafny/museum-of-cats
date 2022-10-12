@@ -20,9 +20,11 @@
   </head>
   <body>
     <nav
-    id="bgNavbar"
-    class="navbar navbar-dark navbar-expand-md py-0 fixed-top bg-main-navbar"
-  ><span class="py-2">&#128062;&#xfe0e;</span></nav>
+      id="bgNavbar"
+      class="navbar navbar-dark navbar-expand-md py-0 fixed-top bg-main-navbar"
+    >
+      <span class="py-2">&#128062;&#xfe0e;</span>
+    </nav>
     <nav
       id="mainNavbar"
       class="navbar navbar-dark navbar-expand-md py-0 fixed-top"
@@ -39,10 +41,18 @@
       <div class="collapse navbar-collapse" id="navLinks">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#titleText" id="homeLink" class="nav-link"></a>
+            <a
+              href="javascript:changeToHomeSection()"
+              id="homeLink"
+              class="nav-link"
+            ></a>
           </li>
           <li class="nav-item">
-            <a href="#aboutSection" id="aboutLink" class="nav-link"></a>
+            <a
+              href="javascript:changeToAboutSection()"
+              id="aboutLink"
+              class="nav-link"
+            ></a>
           </li>
           <li>
             <select onchange="changeLanguage(this)">
@@ -60,79 +70,79 @@
       </div>
     </nav>
     <div class="container-fluid px-0" id="homePage">
-    <section class="container-fluid px-0">
-      <div class="row align-items-center no-gutters">
-        <div class="col-lg-6">
-          <div class="cat-text text-center d-none d-lg-block mt-5" id="titleText">
+      <section class="container-fluid px-0">
+        <div class="row align-items-center no-gutters">
+          <div class="col-lg-6">
+            <div
+              class="cat-text text-center d-none d-lg-block mt-5"
+              id="titleText"
+            ></div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-5 mb-md-0">
+            <img src="Resources/kin-belly.png" class="img-fluid" alt="" />
           </div>
         </div>
-        <div class="col-lg-6 mb-5 mb-5 mb-md-0">
-          <img src="Resources/kin-belly.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid px-0" id="aboutSection">
-      <div class="row align-items-center no-gutters">
-        <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
-          <img src="Resources/kin-close.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
-          <div class="row justify-content-center no-gutters">
-            <div class="col-10 col-lg-8 cat-text">
-              <h2 id="aboutTitle"></h2>
-              <img
-                src="Resources/cat-icon-sm.png"
-                class="d-none d-lg-inline"
-                alt=""
-              />
-              <p id="aboutText" class="lead">
-              </p>
+      </section>
+      <section class="container-fluid px-0" id="aboutSection">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
+            <img src="Resources/kin-close.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-10 col-lg-8 cat-text">
+                <h2 id="aboutTitle"></h2>
+                <img
+                  src="Resources/cat-icon-sm.png"
+                  class="d-none d-lg-inline"
+                  alt=""
+                />
+                <p id="aboutText" class="lead"></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="container-fluid px-0">
-      <div class="row align-items-center no-gutters">
-        <div class="col-md-6 text-center mb-5 mb-md-0">
-          <div class="row justify-content-center no-gutters">
-            <div class="col-10 col-lg-8 cat-text">
-              <h2 id="aboutTitleRose"></h2>
-              <img
-                src="Resources/cat-icon-sm.png"
-                class="d-none d-lg-inline"
-                alt=""
-              />
-              <p id="aboutTextRose" class="lead">
-              </p>
+      </section>
+      <section class="container-fluid px-0">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 text-center mb-5 mb-md-0">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-10 col-lg-8 cat-text">
+                <h2 id="aboutTitleRose"></h2>
+                <img
+                  src="Resources/cat-icon-sm.png"
+                  class="d-none d-lg-inline"
+                  alt=""
+                />
+                <p id="aboutTextRose" class="lead"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 mb-md-0">
+            <img src="Resources/rose-sit.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid px-0" id="aboutSection">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
+            <img src="Resources/luna.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-10 col-lg-8 cat-text">
+                <h2 id="aboutTitleLuna"></h2>
+                <img
+                  src="Resources/cat-icon-sm.png"
+                  class="d-none d-lg-inline"
+                  alt=""
+                />
+                <p id="aboutTextLuna" class="lead"></p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-5 mb-md-0">
-          <img src="Resources/rose-sit.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid px-0" id="aboutSection">
-      <div class="row align-items-center no-gutters">
-        <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
-          <img src="Resources/luna.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
-          <div class="row justify-content-center no-gutters">
-            <div class="col-10 col-lg-8 cat-text">
-              <h2 id="aboutTitleLuna"></h2>
-              <img
-                src="Resources/cat-icon-sm.png"
-                class="d-none d-lg-inline"
-                alt=""
-              />
-              <p id="aboutTextLuna" class="lead">
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
       <section class="container-fluid px-0">
         <div class="row align-items-center no-gutters">
           <div class="col-md-6 text-center mb-5 mb-md-0">
@@ -144,8 +154,7 @@
                   class="d-none d-lg-inline"
                   alt=""
                 />
-                <p id="aboutTextNala" class="lead">
-                </p>
+                <p id="aboutTextNala" class="lead"></p>
               </div>
             </div>
           </div>
@@ -153,8 +162,30 @@
             <img src="Resources/nala.png" class="img-fluid" alt="" />
           </div>
         </div>
-      </div>
       </section>
+    </div>
+    <div class="container px-0 d-none" id="aboutPage">
+      <section class="container-fluid px-0">
+        <div class="row pt-5 mt-5 px-3">
+          <div class="col-3 px-0">
+            <img
+              src="Resources/kin-close.png"
+              class="img-fluid shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-3 px-0">
+            <img src="Resources/rose-sit.png" class="img-fluid shadow" alt="" />
+          </div>
+          <div class="col-3 px-0">
+            <img src="Resources/luna.png" class="img-fluid shadow" alt="" />
+          </div>
+          <div class="col-3 px-0">
+            <img src="Resources/nala.png" class="img-fluid shadow" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -28,6 +28,16 @@ function themeColor(sel) {
   }
 }
 
+function changeToAboutSection() {
+  $("#homePage").addClass("d-none");
+  $("#aboutPage").removeClass("d-none");
+}
+
+function changeToHomeSection() {
+  $("#homePage").removeClass("d-none");
+  $("#aboutPage").addClass("d-none");
+}
+
 function changeLanguage(sel) {
   const menuName = $("#menuName");
   const menuLink = $("#homeLink");
