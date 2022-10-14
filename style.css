@@ -122,6 +122,7 @@ select:focus-visible {
 }
 .cat-about-pic {
   box-sizing: border-box;
+  cursor: pointer;
 }
 .cat-about-pic.active:nth-of-type(1) {
   border: solid 15px #cdb4db;
