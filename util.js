@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $(this).scrollTop(0);
   changeLanguage($("selChangeLanguage"));
+  catAboutDinamic();
 });
 
 document.addEventListener("scroll", () => {
@@ -25,6 +26,17 @@ function themeColor(sel) {
     for (let elem of catText) {
       $(elem).removeClass("dark-theme");
     }
+  }
+}
+
+function catAboutDinamic() {
+  let catAboutPic = $(".cat-about-pic");
+  let catAboutText = $(".cat-about-text");
+  for (let i in catAboutPic) {
+    catAboutPic[i].onclick = function () {
+      $(catAboutPic[i]).toggleClass("active");
+      $(catAboutText[i]).toggleClass("show");
+    };
   }
 }
 

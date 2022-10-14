@@ -97,6 +97,65 @@ select:focus-visible {
   outline: none;
 }
 
+.about-cat {
+  position: absolute;
+  background-color: #4a4e69;
+  color: #f2e9e4;
+  text-align: center;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+}
+
+.about-cat::before {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #4a4e69;
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 100%;
+  z-index: 5;
+}
+.cat-about-pic {
+  box-sizing: border-box;
+}
+.cat-about-pic.active:nth-of-type(1) {
+  border: solid 15px #cdb4db;
+}
+.cat-about-pic.active:nth-of-type(2) {
+  border: solid 15px #ffc8dd;
+}
+.cat-about-pic.active:nth-of-type(3) {
+  border: solid 15px #ffafcc;
+}
+.cat-about-pic.active:nth-of-type(4) {
+  border: solid 15px #bde0fe;
+}
+.cat-about-text {
+  display: none;
+  color: #22223b;
+  line-height: 5;
+}
+.cat-about-text:nth-of-type(1) {
+  background-color: #cdb4db;
+}
+.cat-about-text:nth-of-type(2) {
+  background-color: #ffc8dd;
+}
+.cat-about-text:nth-of-type(3) {
+  background-color: #ffafcc;
+}
+.cat-about-text:nth-of-type(4) {
+  background-color: #bde0fe;
+}
+.cat-about-text.show {
+  display: block;
+}
+
 /* dark theme */
 .cat-text.dark-theme h1 {
   color: #c9ada7;
