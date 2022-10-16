@@ -55,14 +55,14 @@ function changeLanguage(sel) {
   const menuLink = $("#homeLink");
   const menuAbout = $("#aboutLink");
   const titlePage = $("#titleText");
-  const kin = $("#aboutTitle");
-  const kinText = $("#aboutText");
-  const rose = $("#aboutTitleRose");
-  const roseText = $("#aboutTextRose");
-  const luna = $("#aboutTitleLuna");
-  const lunaText = $("#aboutTextLuna");
-  const nala = $("#aboutTitleNala");
-  const nalaText = $("#aboutTextNala");
+  const kin = $("#homeTitle");
+  const kinText = $("#homeText");
+  const rose = $("#homeTitleRose");
+  const roseText = $("#homeTextRose");
+  const luna = $("#homeTitleLuna");
+  const lunaText = $("#homeTextLuna");
+  const nala = $("#homeTitleNala");
+  const nalaText = $("#homeTextNala");
   if (sel.value == 2) {
     menuName.text("GATO");
     menuLink.text("INICIO");
