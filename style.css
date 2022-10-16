@@ -227,4 +227,11 @@ select:focus-visible {
   select .dropdown-option {
     background-image: linear-gradient(to right, #4a4e69, #4a4e6920);
   }
+  .cat-about-text {
+    display: block;
+    visibility: hidden;
+  }
+  .cat-about-text.show {
+    visibility: visible;
+  }
 }
