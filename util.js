@@ -63,6 +63,11 @@ function changeLanguage(sel) {
   const lunaText = $("#homeTextLuna");
   const nala = $("#homeTitleNala");
   const nalaText = $("#homeTextNala");
+  const aboutTitle = $("#aboutSectionTitle");
+  const kinAbout = $("#kinAboutText");
+  const roseAbout = $("#roseAboutText");
+  const lunaAbout = $("#lunaAboutText");
+  const nalaAbout = $("#nalaAboutText");
   if (sel.value == 2) {
     menuName.text("GATO");
     menuLink.text("INICIO");
@@ -86,6 +91,11 @@ function changeLanguage(sel) {
     nalaText.text(
       "Me dê um pouco da sua comida  me dê um pouco da sua comida  me dê um pouco da sua comida, meh não quero isso. Me recuso a sair da caixinha de papelão! Por que esconder minha incrivel e artística habilidade de arranhar? Preciso checar o humano, não o vejo faz uma hora, talvez esteja morto, oh veja, o humano está vivo, hiss para o humano, me alimente."
     );
+    aboutTitle.text("Clique em um gatinho para conhece-lo melhor");
+    kinAbout.html("Idade: 4<br>Aniversário: 27/07<br>cor favorita: nenhuma");
+    roseAbout.html("Idade: 1~2<br>Aniversário: ???<br>cor favorita: nenhuma");
+    lunaAbout.html("Idade: ???<br>Aniversário: ???<br>cor favorita: nenhuma");
+    nalaAbout.html("Idade: ???<br>Aniversário: ???<br>cor favorita: nenhuma");
   } else {
     menuName.text("CAT");
     menuLink.text("HOME");
@@ -109,5 +119,10 @@ function changeLanguage(sel) {
     nalaText.text(
       "Give me some of your food give me some of your food give me some of your food meh, I don't want it. Refuse to leave cardboard box! Why hide my amazing artistic clawing skills? Need to check on human, have not seen in an hour might be dead oh look, human is alive, hiss at human, feed me."
     );
+    aboutTitle.text("Click on a cat to learn more!");
+    kinAbout.html("Age: 4<br>Birthday: 27/07<br>Favorite color: none");
+    roseAbout.html("Age: 1~2<br>Birthday: ???<br>Favorite color: none");
+    lunaAbout.html("Age: ???<br>Birthday: ???<br>Favorite color: none");
+    nalaAbout.html("Age: ???<br>Birthday: ???<br>Favorite color: none");
   }
 }

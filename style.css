@@ -139,7 +139,6 @@ select:focus-visible {
 .cat-about-text {
   display: none;
   color: #22223b;
-  line-height: 5;
 }
 .cat-about-text:nth-of-type(1) {
   background-color: #cdb4db;
