@@ -92,10 +92,16 @@ function changeLanguage(sel) {
       "Me dê um pouco da sua comida  me dê um pouco da sua comida  me dê um pouco da sua comida, meh não quero isso. Me recuso a sair da caixinha de papelão! Por que esconder minha incrivel e artística habilidade de arranhar? Preciso checar o humano, não o vejo faz uma hora, talvez esteja morto, oh veja, o humano está vivo, hiss para o humano, me alimente."
     );
     aboutTitle.text("Clique em um gatinho para conhece-lo melhor");
-    kinAbout.html("Idade: 4<br>Aniversário: 27/07<br>cor favorita: nenhuma");
-    roseAbout.html("Idade: 1~2<br>Aniversário: ???<br>cor favorita: nenhuma");
-    lunaAbout.html("Idade: ???<br>Aniversário: ???<br>cor favorita: nenhuma");
-    nalaAbout.html("Idade: ???<br>Aniversário: ???<br>cor favorita: nenhuma");
+    kinAbout.html(
+      "Idade: 4 anos<br>Aniversário: 27/07<br>Cor favorita: nenhuma"
+    );
+    roseAbout.html("Idade: 1 ano<br>Aniversário: ???<br>Cor favorita: nenhuma");
+    lunaAbout.html(
+      "Idade: 2 anos<br>Aniversário: 29/08<br>Cor favorita: nenhuma"
+    );
+    nalaAbout.html(
+      "Idade: 2 anos<br>Aniversário: 05/05<br>Cor favorita: nenhuma"
+    );
   } else {
     menuName.text("CAT");
     menuLink.text("HOME");
@@ -120,9 +126,9 @@ function changeLanguage(sel) {
       "Give me some of your food give me some of your food give me some of your food meh, I don't want it. Refuse to leave cardboard box! Why hide my amazing artistic clawing skills? Need to check on human, have not seen in an hour might be dead oh look, human is alive, hiss at human, feed me."
     );
     aboutTitle.text("Click on a cat to learn more!");
-    kinAbout.html("Age: 4<br>Birthday: 27/07<br>Favorite color: none");
-    roseAbout.html("Age: 1~2<br>Birthday: ???<br>Favorite color: none");
-    lunaAbout.html("Age: ???<br>Birthday: ???<br>Favorite color: none");
-    nalaAbout.html("Age: ???<br>Birthday: ???<br>Favorite color: none");
+    kinAbout.html("Age: 4 years<br>Birthday: 27/07<br>Favorite color: none");
+    roseAbout.html("Age: 1 year<br>Birthday: ???<br>Favorite color: none");
+    lunaAbout.html("Age: 2 years<br>Birthday: 29/08<br>Favorite color: none");
+    nalaAbout.html("Age: 2 years<br>Birthday: 05/05<br>Favorite color: none");
   }
 }
