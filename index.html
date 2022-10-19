@@ -20,14 +20,16 @@
   </head>
   <body>
     <nav
-    id="bgNavbar"
-    class="navbar navbar-dark navbar-expand-md py-0 fixed-top bg-main-navbar"
-  ><span class="py-2">&#128062;&#xfe0e;</span></nav>
+      id="bgNavbar"
+      class="navbar navbar-dark navbar-expand-md py-0 fixed-top bg-main-navbar"
+    >
+      <span class="py-2">&#128062;&#xfe0e;</span>
+    </nav>
     <nav
       id="mainNavbar"
       class="navbar navbar-dark navbar-expand-md py-0 fixed-top"
     >
-      <a href="#" id="menuName" class="navbar-brand">CAT</a>
+      <a href="#" id="menuName" class="navbar-brand"></a>
       <button
         class="navbar-toggler"
         data-toggle="collapse"
@@ -39,10 +41,18 @@
       <div class="collapse navbar-collapse" id="navLinks">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#titleText" id="homeLink" class="nav-link">HOME</a>
+            <a
+              href="javascript:changeToHomeSection()"
+              id="homeLink"
+              class="nav-link"
+            ></a>
           </li>
           <li class="nav-item">
-            <a href="#aboutSection" id="aboutLink" class="nav-link">ABOUT</a>
+            <a
+              href="javascript:changeToAboutSection()"
+              id="aboutLink"
+              class="nav-link"
+            ></a>
           </li>
           <li>
             <select onchange="changeLanguage(this)">
@@ -59,117 +69,92 @@
         </ul>
       </div>
     </nav>
-    <section class="container-fluid px-0">
-      <div class="row align-items-center no-gutters">
-        <div class="col-lg-6">
-          <div class="cat-text text-center d-none d-lg-block mt-5" id="titleText">
-            <h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>
-            <h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>
-            <h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>
-            <h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>
-            <h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>
-            <h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>
-            <h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-5 mb-5 mb-md-0">
-          <img src="Resources/kin-belly.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid px-0" id="aboutSection">
-      <div class="row align-items-center no-gutters">
-        <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
-          <img src="Resources/kin-close.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
-          <div class="row justify-content-center no-gutters">
-            <div class="col-10 col-lg-8 cat-text">
-              <h2 id="aboutTitle">KIN THE CAT</h2>
-              <img
-                src="Resources/cat-icon-sm.png"
-                class="d-none d-lg-inline"
-                alt=""
-              />
-              <p id="aboutText" class="lead">
-                Furrier and even more furrier hairball. Ask to be pet then
-                attack owners hand! Kitty time, Meooooow! Meow chew on cable,
-                touch water with paw then recoil in horror, my siamese stalks me
-                (in a good way). I see a bird I stare at it I meow at it I do a
-                wiggle come here birdy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid px-0">
-      <div class="row align-items-center no-gutters">
-        <div class="col-md-6 text-center mb-5 mb-md-0">
-          <div class="row justify-content-center no-gutters">
-            <div class="col-10 col-lg-8 cat-text">
-              <h2 id="aboutTitleRose">ROSE THE CAT</h2>
-              <img
-                src="Resources/cat-icon-sm.png"
-                class="d-none d-lg-inline"
-                alt=""
-              />
-              <p id="aboutTextRose" class="lead">
-                Litter box is life, spread kitty litter all over the house. Open
-                the door, let me out, let me out, let me-out, let me-aow, let
-                meaow, meaow! Pee in human's bed until he cleans the litter box.
-                Eat too much then proceed to regurgitate all over the living
-                room carpet. I lick butt and make a weird face.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-5 mb-md-0">
-          <img src="Resources/rose-sit.png" class="img-fluid" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid px-0" id="aboutSection">
-      <div class="row align-items-center no-gutters">
-        <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
-          <img src="Resources/luna.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
-          <div class="row justify-content-center no-gutters">
-            <div class="col-10 col-lg-8 cat-text">
-              <h2 id="aboutTitleLuna">LUNA THE CAT</h2>
-              <img
-                src="Resources/cat-icon-sm.png"
-                class="d-none d-lg-inline"
-                alt=""
-              />
-              <p id="aboutTextLuna" class="lead">
-                Wake up lick paw wake up owner meow meow.
-                Scratch at the door then walk away, but at four in the morning wake up owner meeeeeeooww. 
-                Kitty power step on your keyboard while you're gaming, pet me pet me don't pet me,  
-                reward the chosen human with a slow blink. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container-fluid px-0" id="homePage">
       <section class="container-fluid px-0">
         <div class="row align-items-center no-gutters">
-          <div class="col-md-6 text-center mb-5 mb-md-0">
+          <div class="col-lg-6">
+            <div
+              class="cat-text text-center d-none d-lg-block mt-5"
+              id="titleText"
+            ></div>
+          </div>
+          <div class="col-lg-6 mb-5 mb-5 mb-md-0">
+            <img src="Resources/kin-belly.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid px-0" id="homeSection">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
+            <img src="Resources/kin-close.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
             <div class="row justify-content-center no-gutters">
               <div class="col-10 col-lg-8 cat-text">
-                <h2 id="aboutTitleNala">NALA THE CAT</h2>
+                <h2 id="homeTitle"></h2>
                 <img
                   src="Resources/cat-icon-sm.png"
                   class="d-none d-lg-inline"
                   alt=""
                 />
-                <p id="aboutTextNala" class="lead">
-                  Give me some of your food give me some of your food give me some of your food meh, 
-                  I don't want it. Refuse to leave cardboard box!
-                  Why hide my amazing artistic clawing skills? 
-                  Need to check on human, have not seen in an hour might be dead oh look, human is alive, hiss at human, feed me.
-                </p>
+                <p id="homeText" class="lead"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid px-0">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 text-center mb-5 mb-md-0">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-10 col-lg-8 cat-text">
+                <h2 id="homeTitleRose"></h2>
+                <img
+                  src="Resources/cat-icon-sm.png"
+                  class="d-none d-lg-inline"
+                  alt=""
+                />
+                <p id="homeTextRose" class="lead"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 mb-md-0">
+            <img src="Resources/rose-sit.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid px-0" id="homeSection">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 order-2 order-md-1 mb-5 mb-md-0">
+            <img src="Resources/luna.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-10 col-lg-8 cat-text">
+                <h2 id="homeTitleLuna"></h2>
+                <img
+                  src="Resources/cat-icon-sm.png"
+                  class="d-none d-lg-inline"
+                  alt=""
+                />
+                <p id="homeTextLuna" class="lead"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid px-0">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-6 text-center mb-5 mb-md-0">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-10 col-lg-8 cat-text">
+                <h2 id="homeTitleNala"></h2>
+                <img
+                  src="Resources/cat-icon-sm.png"
+                  class="d-none d-lg-inline"
+                  alt=""
+                />
+                <p id="homeTextNala" class="lead"></p>
               </div>
             </div>
           </div>
@@ -178,6 +163,56 @@
           </div>
         </div>
       </section>
+    </div>
+    <div class="container px-0 d-none" id="aboutPage">
+      <section class="container-fluid no-gutters px-3 px-md-0">
+        <div class="row pt-5 mt-5 px-3 px-md-0 justify-content-center cat-text">
+          <h2 id="aboutSectionTitle"></h2>
+        </div>
+        <div class="row pt-5 px-3 px-md-0">
+          <div class="col-6 col-md-12 pt-0 pt-md-5 px-0">
+            <div class="row">
+              <div class="cat-about-pic cat-text col-12 col-md-3 px-0">
+                <img src="Resources/kin-close.png" class="img-fluid" alt="" />
+              </div>
+              <div class="cat-about-pic cat-text col-12 col-md-3 px-0">
+                <img src="Resources/rose-sit.png" class="img-fluid" alt="" />
+              </div>
+              <div class="cat-about-pic cat-text col-12 col-md-3 px-0">
+                <img src="Resources/luna.png" class="img-fluid" alt="" />
+              </div>
+              <div class="cat-about-pic cat-text col-12 col-md-3 px-0">
+                <img src="Resources/nala.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-12 px-0">
+            <div class="row">
+              <div
+                class="col cat-about-text cat-text text-center my-5 my-md-0 py-0 py-md-5"
+              >
+                <p id="kinAboutText"></p>
+              </div>
+              <div
+                class="col cat-about-text cat-text text-center my-5 my-md-0 py-0 py-md-5"
+              >
+                <p id="roseAboutText"></p>
+              </div>
+              <div
+                class="col cat-about-text cat-text text-center my-5 my-md-0 py-0 py-md-5"
+              >
+                <p id="lunaAboutText"></p>
+              </div>
+              <div
+                class="col cat-about-text cat-text text-center my-5 my-md-0 py-0 py-md-5"
+              >
+                <p id="nalaAboutText"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

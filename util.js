@@ -1,30 +1,53 @@
+$(document).ready(function () {
+  $(this).scrollTop(0);
+  changeLanguage($("selChangeLanguage"));
+  catAboutDinamic();
+});
+
 document.addEventListener("scroll", () => {
   const navbar = document.getElementById("bgNavbar");
   if (document.documentElement.scrollTop > navbar.clientHeight) {
-    navbar.classList.add("scrolled");
-    navbar.classList.remove("scrolledTop");
+    $(navbar).addClass("scrolled");
+    $(navbar).removeClass("scrolledTop");
   } else {
-    navbar.classList.add("scrolledTop");
+    $(navbar).addClass("scrolledTop");
   }
-});
-
-$(document).ready(function () {
-  $(this).scrollTop(0);
 });
 
 function themeColor(sel) {
   const catText = $(".cat-text");
   if (sel.value == 2) {
-    document.body.style.backgroundColor = "#22223b";
+    $("body").css({ background: "#22223b" });
     for (let elem of catText) {
-      elem.classList.add("dark-theme");
+      $(elem).addClass("dark-theme");
     }
   } else {
-    document.body.style.backgroundColor = "#9a8c98";
+    $("body").css({ background: "#9a8c98" });
     for (let elem of catText) {
-      elem.classList.remove("dark-theme");
+      $(elem).removeClass("dark-theme");
     }
   }
+}
+
+function catAboutDinamic() {
+  let catAboutPic = $(".cat-about-pic");
+  let catAboutText = $(".cat-about-text");
+  for (let i in catAboutPic) {
+    catAboutPic[i].onclick = function () {
+      $(catAboutPic[i]).toggleClass("active");
+      $(catAboutText[i]).toggleClass("show");
+    };
+  }
+}
+
+function changeToAboutSection() {
+  $("#homePage").addClass("d-none");
+  $("#aboutPage").removeClass("d-none");
+}
+
+function changeToHomeSection() {
+  $("#homePage").removeClass("d-none");
+  $("#aboutPage").addClass("d-none");
 }
 
 function changeLanguage(sel) {
@@ -32,14 +55,19 @@ function changeLanguage(sel) {
   const menuLink = $("#homeLink");
   const menuAbout = $("#aboutLink");
   const titlePage = $("#titleText");
-  const kin = $("#aboutTitle");
-  const kinText = $("#aboutText");
-  const rose = $("#aboutTitleRose");
-  const roseText = $("#aboutTextRose");
-  const luna = $("#aboutTitleLuna");
-  const lunaText = $("#aboutTextLuna");
-  const nala = $("#aboutTitleNala");
-  const nalaText = $("#aboutTextNala");
+  const kin = $("#homeTitle");
+  const kinText = $("#homeText");
+  const rose = $("#homeTitleRose");
+  const roseText = $("#homeTextRose");
+  const luna = $("#homeTitleLuna");
+  const lunaText = $("#homeTextLuna");
+  const nala = $("#homeTitleNala");
+  const nalaText = $("#homeTextNala");
+  const aboutTitle = $("#aboutSectionTitle");
+  const kinAbout = $("#kinAboutText");
+  const roseAbout = $("#roseAboutText");
+  const lunaAbout = $("#lunaAboutText");
+  const nalaAbout = $("#nalaAboutText");
   if (sel.value == 2) {
     menuName.text("GATO");
     menuLink.text("INICIO");
@@ -62,6 +90,17 @@ function changeLanguage(sel) {
     nala.text("NALA A GATA");
     nalaText.text(
       "Me dê um pouco da sua comida  me dê um pouco da sua comida  me dê um pouco da sua comida, meh não quero isso. Me recuso a sair da caixinha de papelão! Por que esconder minha incrivel e artística habilidade de arranhar? Preciso checar o humano, não o vejo faz uma hora, talvez esteja morto, oh veja, o humano está vivo, hiss para o humano, me alimente."
+    );
+    aboutTitle.text("Clique em um gatinho para conhece-lo melhor");
+    kinAbout.html(
+      "Idade: 4 anos<br>Aniversário: 27/07<br>Cor favorita: nenhuma"
+    );
+    roseAbout.html("Idade: 1 ano<br>Aniversário: ???<br>Cor favorita: nenhuma");
+    lunaAbout.html(
+      "Idade: 2 anos<br>Aniversário: 29/08<br>Cor favorita: nenhuma"
+    );
+    nalaAbout.html(
+      "Idade: 2 anos<br>Aniversário: 05/05<br>Cor favorita: nenhuma"
     );
   } else {
     menuName.text("CAT");
@@ -86,5 +125,10 @@ function changeLanguage(sel) {
     nalaText.text(
       "Give me some of your food give me some of your food give me some of your food meh, I don't want it. Refuse to leave cardboard box! Why hide my amazing artistic clawing skills? Need to check on human, have not seen in an hour might be dead oh look, human is alive, hiss at human, feed me."
     );
+    aboutTitle.text("Click on a cat to learn more!");
+    kinAbout.html("Age: 4 years<br>Birthday: 27/07<br>Favorite color: none");
+    roseAbout.html("Age: 1 year<br>Birthday: ???<br>Favorite color: none");
+    lunaAbout.html("Age: 2 years<br>Birthday: 29/08<br>Favorite color: none");
+    nalaAbout.html("Age: 2 years<br>Birthday: 05/05<br>Favorite color: none");
   }
 }
