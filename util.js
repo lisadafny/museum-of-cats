@@ -81,7 +81,7 @@ function changeLanguage(sel) {
     menuName.text("GATO");
     menuHome.text("INICIO");
     menuAbout.text("SOBRE");
-    menuAbout.text("+GATOS");
+    menuMoreCats.text("+GATOS");
     titlePage.html(
       "<h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1>"
     );
