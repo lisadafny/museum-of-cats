@@ -197,7 +197,13 @@ select:focus-visible {
   color: #f2e9e4;
 }
 /* end of dark theme */
-
+@media (min-width: 1415px) {
+  #navLinks .navbar-nav {
+    justify-content: space-evenly;
+    display: flex;
+    width: 40%;
+  }
+}
 @media (max-width: 1415px) {
   .cat-text h1 {
     font-size: 2.5rem;
