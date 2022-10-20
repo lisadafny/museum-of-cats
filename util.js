@@ -43,17 +43,26 @@ function catAboutDinamic() {
 function changeToAboutSection() {
   $("#homePage").addClass("d-none");
   $("#aboutPage").removeClass("d-none");
+  $("#MoreCatsPage").addclass("d-none");
 }
 
 function changeToHomeSection() {
   $("#homePage").removeClass("d-none");
   $("#aboutPage").addClass("d-none");
+  $("#MoreCatsPage").addclass("d-none");
+}
+
+function changeToMoreCatsSection() {
+  $("#homePage").addClass("d-none");
+  $("#aboutPage").addClass("d-none");
+  $("#MoreCatsPage").removeclass("d-none");
 }
 
 function changeLanguage(sel) {
   const menuName = $("#menuName");
-  const menuLink = $("#homeLink");
+  const menuHome = $("#homeLink");
   const menuAbout = $("#aboutLink");
+  const menuMoreCats = $("#moreCatsLink");
   const titlePage = $("#titleText");
   const kin = $("#homeTitle");
   const kinText = $("#homeText");
@@ -70,8 +79,9 @@ function changeLanguage(sel) {
   const nalaAbout = $("#nalaAboutText");
   if (sel.value == 2) {
     menuName.text("GATO");
-    menuLink.text("INICIO");
+    menuHome.text("INICIO");
     menuAbout.text("SOBRE");
+    menuAbout.text("+GATOS");
     titlePage.html(
       "<h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1><h1>MIAU <span>&#128062;&#xfe0e;</span> MIAU</h1>"
     );
@@ -104,8 +114,9 @@ function changeLanguage(sel) {
     );
   } else {
     menuName.text("CAT");
-    menuLink.text("HOME");
+    menuHome.text("HOME");
     menuAbout.text("ABOUT");
+    menuMoreCats.text("+CATS");
     titlePage.html(
       "<h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1><h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1><h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1><h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1><h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1><h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1><h1>MEOW <span>&#128062;&#xfe0e;</span> MEOW</h1>"
     );
