@@ -43,19 +43,19 @@ function catAboutDinamic() {
 function changeToAboutSection() {
   $("#homePage").addClass("d-none");
   $("#aboutPage").removeClass("d-none");
-  $("#MoreCatsPage").addclass("d-none");
+  $("#moreCatsPage").addclass("d-none");
 }
 
 function changeToHomeSection() {
   $("#homePage").removeClass("d-none");
   $("#aboutPage").addClass("d-none");
-  $("#MoreCatsPage").addclass("d-none");
+  $("#moreCatsPage").addclass("d-none");
 }
 
 function changeToMoreCatsSection() {
   $("#homePage").addClass("d-none");
   $("#aboutPage").addClass("d-none");
-  $("#MoreCatsPage").removeclass("d-none");
+  $("#moreCatsPage").removeClass("d-none");
 }
 
 function changeLanguage(sel) {
