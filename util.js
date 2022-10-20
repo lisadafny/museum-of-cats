@@ -43,13 +43,13 @@ function catAboutDinamic() {
 function changeToAboutSection() {
   $("#homePage").addClass("d-none");
   $("#aboutPage").removeClass("d-none");
-  $("#moreCatsPage").addclass("d-none");
+  $("#moreCatsPage").addClass("d-none");
 }
 
 function changeToHomeSection() {
   $("#homePage").removeClass("d-none");
   $("#aboutPage").addClass("d-none");
-  $("#moreCatsPage").addclass("d-none");
+  $("#moreCatsPage").addClass("d-none");
 }
 
 function changeToMoreCatsSection() {
