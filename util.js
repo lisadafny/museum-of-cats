@@ -1,8 +1,21 @@
+const selLang = $("#selLang");
+const selTheme = $("#selTheme");
+
 $(document).ready(function () {
   $(this).scrollTop(0);
-  changeLanguage($("selChangeLanguage"));
   catAboutDinamic();
+  bindFunctionsToElems();
+  changeLanguage(selLang);
 });
+
+function bindFunctionsToElems() {
+  selLang.on("change", function () {
+    changeLanguage(selLang.val());
+  });
+  selTheme.on("change", function () {
+    themeColor(selTheme.val());
+  });
+}
 
 document.addEventListener("scroll", () => {
   const navbar = document.getElementById("bgNavbar");
@@ -16,7 +29,7 @@ document.addEventListener("scroll", () => {
 
 function themeColor(sel) {
   const catText = $(".cat-text");
-  if (sel.value == 2) {
+  if (sel == 2) {
     $("body").css({ background: "#22223b" });
     for (let elem of catText) {
       $(elem).addClass("dark-theme");
@@ -77,7 +90,7 @@ function changeLanguage(sel) {
   const roseAbout = $("#roseAboutText");
   const lunaAbout = $("#lunaAboutText");
   const nalaAbout = $("#nalaAboutText");
-  if (sel.value == 2) {
+  if (sel == 2) {
     menuName.text("GATO");
     menuHome.text("INICIO");
     menuAbout.text("SOBRE");
